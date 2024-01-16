@@ -294,7 +294,7 @@ function MovieDetails({
 			document.title = `Movie | ${title}`;
 
 			return function () {
-				document.title = `usePopcorn`;
+				document.title = `MovieMate`;
 			};
 		},
 		[title]
