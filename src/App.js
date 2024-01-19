@@ -92,7 +92,7 @@ function Logo() {
 	return (
 		<div className="logo">
 			<span role="img">🍿</span>
-			<h1>usePopcorn</h1>
+			<h1>MovieMate</h1>
 		</div>
 	);
 }
@@ -229,7 +229,7 @@ function MovieDetails({
 			async function getMovieDetails() {
 				setIsLoading(true);
 				const res = await fetch(
-					`http://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`
+					`https://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`
 				);
 				const data = await res.json();
 
